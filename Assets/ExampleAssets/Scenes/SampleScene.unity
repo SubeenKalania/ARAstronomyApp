@@ -297,7 +297,7 @@ Transform:
   m_Children:
   - {fileID: 22732924}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &388525033
 MonoBehaviour:
@@ -427,75 +427,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1001 &693286454
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 22e1abded0001a84d8e8286829b8a43b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 22e1abded0001a84d8e8286829b8a43b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2390.977
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 22e1abded0001a84d8e8286829b8a43b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 22e1abded0001a84d8e8286829b8a43b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -146.7318
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 22e1abded0001a84d8e8286829b8a43b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 22e1abded0001a84d8e8286829b8a43b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 22e1abded0001a84d8e8286829b8a43b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 22e1abded0001a84d8e8286829b8a43b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 22e1abded0001a84d8e8286829b8a43b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 22e1abded0001a84d8e8286829b8a43b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 22e1abded0001a84d8e8286829b8a43b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 22e1abded0001a84d8e8286829b8a43b,
-        type: 3}
-      propertyPath: m_Name
-      value: Mercury 1K
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 22e1abded0001a84d8e8286829b8a43b, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,7 +566,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &999520209
 GameObject:
@@ -666,11 +597,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54208e591a9f340498bbab8d74fa1fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  venus_Planet: {fileID: 8345598171867102084, guid: d712620003100d9409de5b16df37bcdd,
-    type: 3}
+  Planets:
+  - {fileID: 8345598171867102084, guid: d712620003100d9409de5b16df37bcdd, type: 3}
   ar_Manager: {fileID: 388525033}
   spawn: 1
-  spawnedPlanet: {fileID: 0}
   pinchSpeed: 0.5
 --- !u!4 &999520211
 Transform:
@@ -686,7 +616,7 @@ Transform:
   m_Children:
   - {fileID: 684277499}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &212175866532230322
 Transform:
@@ -701,7 +631,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5434462552450501220
 MonoBehaviour:

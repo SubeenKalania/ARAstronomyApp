@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu_UI_Scene.unity
+    guid: 6d77d2cd58aed0748867af05432af5b7
+  - enabled: 1
+    path: Assets/Scenes/CelestialObject_UI_scene.unity
+    guid: e7b39413171475745b64bfe853d75636
+  - enabled: 1
+    path: Assets/Scenes/Constellations_UI_scene.unity
+    guid: 2b7a11df3fbdac94bb1a1ce70ea8ff26
+  - enabled: 1
+    path: Assets/Scenes/PlanetsPage_UI_Scene.unity
+    guid: f29bbed899517b14e886451f8de599b5
+  - enabled: 0
     path: Assets/ExampleAssets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
