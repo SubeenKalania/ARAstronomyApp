@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 941429760682712267}
   - component: {fileID: 4233237364827640686}
   - component: {fileID: 2115440295258007460}
+  - component: {fileID: 286719774}
+  - component: {fileID: 1104000580119093888}
   m_Layer: 0
   m_Name: Mercury 1K
   m_TagString: Untagged
@@ -83,3 +85,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &286719774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458084915490653809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2adbd374002264547954b3e94e2aab5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 458084915490653809}
+  rotate_Speed: 1
+  tilt_Angle: {x: 0, y: 0, z: 0}
+--- !u!114 &1104000580119093888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458084915490653809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6b9d43e837af241b747c567ea8ac73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sun: {fileID: 0}
+  orbit_tiltAngle: 30

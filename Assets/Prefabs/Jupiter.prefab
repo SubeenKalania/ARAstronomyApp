@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4088259457793848513}
   - component: {fileID: 1722068359147757780}
   - component: {fileID: 2505174916102359861}
+  - component: {fileID: 45555177}
+  - component: {fileID: 2505034916000152976}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -97,3 +99,32 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &45555177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3390566468877940750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2adbd374002264547954b3e94e2aab5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 3390566468877940750}
+  rotate_Speed: 30
+  tilt_Angle: {x: 0, y: 0, z: -3}
+--- !u!114 &2505034916000152976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3390566468877940750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6b9d43e837af241b747c567ea8ac73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sun: {fileID: 0}
+  orbit_tiltAngle: 150

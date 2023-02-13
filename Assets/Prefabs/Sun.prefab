@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3866304783679249279}
   - component: {fileID: 6981261574701940832}
   - component: {fileID: 9214544293769333782}
+  - component: {fileID: 1461278751}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -97,3 +98,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1461278751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973576717850878012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2adbd374002264547954b3e94e2aab5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 7973576717850878012}
+  rotate_Speed: 40
+  tilt_Angle: {x: 0, y: 0, z: -7.5}

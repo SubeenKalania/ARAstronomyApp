@@ -92,6 +92,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3565153198637433833}
+  - component: {fileID: 8982182298926324980}
+  - component: {fileID: 1198890428874633915}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
@@ -116,6 +118,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8982182298926324980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4193457485233887571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2adbd374002264547954b3e94e2aab5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 4193457485233887571}
+  rotate_Speed: 80
+  tilt_Angle: {x: 0, y: 0, z: 97}
+--- !u!114 &1198890428874633915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4193457485233887571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6b9d43e837af241b747c567ea8ac73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sun: {fileID: 0}
+  orbit_tiltAngle: 60
 --- !u!1 &7820632591891394669
 GameObject:
   m_ObjectHideFlags: 0
