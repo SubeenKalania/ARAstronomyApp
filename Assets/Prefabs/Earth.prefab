@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 8544445868984011076}
   - component: {fileID: 1087508849}
   m_Layer: 0
-  m_Name: Earth 2K
+  m_Name: Earth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 286719774}
   - component: {fileID: 1104000580119093888}
   m_Layer: 0
-  m_Name: Mercury 1K
+  m_Name: 'Mercury '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

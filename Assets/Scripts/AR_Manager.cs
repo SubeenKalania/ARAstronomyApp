@@ -18,8 +18,41 @@ public class AR_Manager : MonoBehaviour
     public int index_planet = 0;
     public Camera cam =null;
     public TextMeshProUGUI trackingText;
+    public TextMeshProUGUI tempText;
+    public TextMeshProUGUI diameterText;
+    public TextMeshProUGUI gravityText;
+    public TextMeshProUGUI daysText;
+    public TextMeshProUGUI distanceText;
 
 
+    public List<PlanetData> planetsData;
+
+    public void PlanetStats()
+    {
+        if (tempText != null)
+        {
+            tempText.text = planetsData[index_planet].avgTemp.ToString() + "°C";
+        }
+        if (diameterText!= null)
+        {
+            diameterText.text = planetsData[index_planet].size.ToString() + "\nkm";
+
+        }
+        if (daysText != null)
+        {
+            daysText.text = "1 Year = \n" + planetsData[index_planet].days.ToString() + "\nDays";
+        }
+        if (gravityText != null)
+        {
+            gravityText.text = planetsData[index_planet].gravity.ToString() + "\nm/s²";
+        }
+        if (distanceText != null)
+        {
+            distanceText.text = planetsData[index_planet].distance.ToString() + "\nkm";
+
+        }
+  
+    }
     public void PinchToZoom()
     {
         //If planet has been spanwed AND the touch count on the screen is 2 
@@ -83,6 +116,13 @@ public class AR_Manager : MonoBehaviour
             if (Hits.Count > 0 && touch.phase == TouchPhase.Began)
             {
 
+                //IF a planet is alrdy spawned destroy it and Create new
+                if(spawnedPlanet != null)
+                {
+                    Destroy(spawnedPlanet);
+                }
+
+                PlanetStats();
                 //Spawn Planet
                 spawnedPlanet = new GameObject("PlanetHolder");
                 Instantiate(Planets[index_planet], Vector3.zero, Quaternion.identity, spawnedPlanet.transform);
@@ -98,11 +138,20 @@ public class AR_Manager : MonoBehaviour
 
     private void SpawnInPC()
     {
+        //IF a planet is alrdy spawned destroy it and Create new
+
+        if ( spawnedPlanet != null) 
+        {
+            Destroy(spawnedPlanet);
+        }
+
+        PlanetStats();
+
+
         //Spawn Planet
         spawnedPlanet = new GameObject("PlanetHolder");
         Instantiate(Planets[index_planet], Vector3.zero, Quaternion.identity, spawnedPlanet.transform);
         spawnedPlanet.transform.position = Vector3.zero;
-
         trackingText.text = "Spawned Planet: " + Planets[index_planet].name;
         spawn = false;
     }
@@ -119,11 +168,13 @@ public class AR_Manager : MonoBehaviour
         {
             index_planet = 0;
         }
-
+        PlanetStats();
         //Spawn Next planet.
         var newPlanet = Instantiate(Planets[index_planet], Vector3.zero, Quaternion.identity, spawnedPlanet.transform);
         newPlanet.transform.localPosition = Vector3.zero;
         trackingText.text = "Spawned Planet: " + Planets[index_planet].name;
+       
+
         spawnedPlanet.transform.localScale = Vector3.one;
     }
 
@@ -138,10 +189,11 @@ public class AR_Manager : MonoBehaviour
         {
             index_planet = Planets.Count - 1;
         }
-
+        PlanetStats();
         //Spawn Next planet.
         var newPlanet = Instantiate(Planets[index_planet], Vector3.zero, Quaternion.identity, spawnedPlanet.transform);
         newPlanet.transform.localPosition = Vector3.zero;
+        
 
         trackingText.text = "Spawned Planet: " + Planets[index_planet].name;
         spawnedPlanet.transform.localScale = Vector3.one;
@@ -150,25 +202,27 @@ public class AR_Manager : MonoBehaviour
     public void Update()
     {
 
-        //if (Input.GetKeyDown(KeyCode.S))
-        //{
-        //    SpawnInPC();
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            SpawnInPC();
 
-        //}
+        }
 
-        //if (Input.GetKeyDown(KeyCode.RightArrow))
-        //{
-        //    NextPlanet();
-        //}
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            NextPlanet();
+        }
 
-        //if (Input.GetKeyDown(KeyCode.LeftArrow))
-        //{
-        //    Previous_Planet();
-        //}
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            Previous_Planet();
+        }
 
+
+#if !UNITY_EDITOR
         SpawnPlanet();
         PinchToZoom();
-
+#endif
     }
 
 }
