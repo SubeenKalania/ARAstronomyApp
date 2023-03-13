@@ -15,17 +15,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Constellations_UI_scene.unity
     guid: 2b7a11df3fbdac94bb1a1ce70ea8ff26
   - enabled: 1
-    path: Assets/Scenes/PlanetsPage_UI_Scene.unity
+    path: Assets/Scenes/StarsInARScene.unity
     guid: f29bbed899517b14e886451f8de599b5
-  - enabled: 0
-    path: Assets/ExampleAssets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/SolarSystemScene.unity
     guid: 43bec17904e30e142b2ee595bf1e138c
   - enabled: 1
     path: Assets/Scenes/ConstellationARScene.unity
     guid: 906f8acd70388c446bb058093e3812fc
+  - enabled: 1
+    path: Assets/Scenes/MoonsInARScene.unity
+    guid: 209f11d340c4a174a8b392e19d07f4de
+  - enabled: 1
+    path: Assets/Scenes/PlanetsPage_UI_Scene.unity
+    guid: a36e7c98c6e6ec14ea24c201167fd41a
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}

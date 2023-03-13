@@ -12,12 +12,21 @@ public class AppSceneManager : MonoBehaviour
     public const string planetPageScene = "PlanetsPage_UI_Scene";
     public const string solarSystemScene = "SolarSystemScene";
     public const string ConstellationARScene = "ConstellationARScene";
+    public const string StarsinAR = "StarsInARScene";
+    public const string MoonsinAR = "MoonsInARScene";
 
     public void LoadSolarSystemScene()
     {
         SceneManager.LoadScene(solarSystemScene);
     }
-
+    public void LoadMoonsScene()
+    {
+        SceneManager.LoadScene(MoonsinAR);
+    }
+    public void LoadStarScene()
+    {
+        SceneManager.LoadScene(StarsinAR);
+    }
     public void LoadMainMenu()
     {
         SceneManager.LoadScene(mainMenuScene);
@@ -36,9 +45,12 @@ public class AppSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene(planetPageScene);
     }
-    public void ConstellationARPage()
+    public void ConstellationARPage(int indexChoice)
     {
         SceneManager.LoadScene(ConstellationARScene);
+
+        //Save the choice!
+        PlayerPrefs.SetInt("ConstellationChoice", indexChoice);
     }
 
     public void QuitApp()

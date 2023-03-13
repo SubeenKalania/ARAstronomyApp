@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class AR_Manager : MonoBehaviour
 {
@@ -26,6 +27,19 @@ public class AR_Manager : MonoBehaviour
 
 
     public List<PlanetData> planetsData;
+
+    public void Start()
+    { 
+        //Only execute this IF CURRENT SCENE IS "Constellation AR SCENE"
+        if(SceneManager.GetActiveScene().name== "ConstellationARScene")
+        {
+            //Load choice using PlayerPrefs
+            index_planet = PlayerPrefs.GetInt("ConstellationChoice");
+        }
+       
+        
+
+    }
 
     public void PlanetStats()
     {
